@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed&display=swap');
 :root {
     --main-bg-color: #663399;
     --main-h: 100vh;
@@ -29,20 +30,32 @@ h1 {
     justify-content: center;
     align-items: center;
     gap: 30px;
+    margin: 0 20px;
     height: 100%;
 }
 .main__content-col {
     text-align: center;
     width: 100%;
 }
-.main__content-time {
+.main__content-city {
     border: 1px solid pink;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.3);
     box-shadow: 0 0 8px rgba(255, 255, 255, 0.9);
+    font-family: 'Sofia Sans Condensed', sans-serif;
 }
-.content-time__header {
+.content-city__header {
     color: bisque;
     text-transform: uppercase;
-    font-family: sans-serif;
+}
+.content-city__time {
+    color: aquamarine;
+    text-transform: uppercase;
+    font-size: 18pt;
+    margin: 10px 0;
+    transition: 1s;
+}
+
+.content-city__time.active {
+    color:cyan;
 }
